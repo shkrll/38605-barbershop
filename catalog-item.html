@@ -15,11 +15,13 @@
           <li><a href="info.html">Информация</a></li>
           <li><a href="news.html">Новости</a></li>
           <li><a href="price.html">Прайс-лист</a></li>
-           <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
+          <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="login-link"><span><img src="img/login.svg" alt=""></span>Вход</li>
+          <li>
+            <a class="login-link" href="login.html">Вход</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -86,26 +88,30 @@
       </footer>
 
       <section class="modal modal-login">
-        <h2 class="section-title">Личный кабинет</h2>
-        <p>Введите свой логин и пароль.</p>
-        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-          <div>
-            <input class="login-icon-user" type="text" name="login" placeholder="Логин">
-            <div><img src="img/user.svg" width="13" height="13" alt=""></div>
-          </div>
-          <div>
-            <input class="login-icon-password" type="password" name="password" placeholder="Пароль">
-            <div><img src="img/lock.svg" width="13" height="15" alt=""></div>
-          </div>
-          <div class="login-password-info">
+      <h2 class="section-title">Личный кабинет</h2>
+      <p>Введите свой логин и пароль.</p>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="user-login">Логин</label>
+          <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-password">Пароль</label>
+          <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+        </p>
+        <p class="login-password-info">
+          <label class="login-checkbox">
             <input type="checkbox" name="remember" class="visually-hidden">
+            <span class="checkbox-indicator"></span>
             Запомните меня
-            <a class="restore" href="#">Я забыл пароль!</a>
-          </div>
-          <button class="button" type="submit">Войти</button>
-        </form>
-        <span class="modal-close"><img src="img/cross.svg" alt=""></span>
-      </section>
+          </label>
+          <a class="restore" href="#">Я забыл пароль!</a>
+        </p>
+        <button class="button" type="submit">Войти</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button
+    </section>
+      
     </main>
   </body>
 </html>
