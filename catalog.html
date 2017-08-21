@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -18,13 +19,13 @@
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="login-link">Вход</li>
+          <li class="login-link"><span><img src="img/login.svg" alt=""></span>Вход</li>
         </ul>
       </nav>
     </header>
     <main class="container">
       <h1 class="page-title">Cредства для ухода</h1>
-      
+
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Магазин</a></li>
@@ -82,7 +83,7 @@
           <button type="submit" class="filter-button button">Показать</button>
         </form>
       </section>
-      
+
       <section class="catalog">
         <h2 class="visually-hidden">Список средств для ухода</h2>
         <ul class="catalog-list">
@@ -207,34 +208,37 @@
       <div class="footer-social">
         <b>Давайте дружить!</b>
         <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
+          <li><a class="social-button" href="#"><img src="img/vk.svg" width="14" height="8" alt="VK"></a></li>
+          <li><a class="social-button" href="#"><img src="img/facebook.svg" width="5" height="11" alt="Facebook"></a></li>
+          <li><a class="social-button" href="#"><img src="img/instagram.svg" width="10" height="10" alt="Instagram"></a></li>
         </ul>
       </div>
       <p class="footer-copyright">
         <b>Разработано:</b> <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
       </p>
     </footer>
-    
+
     <section class="modal modal-login">
-      <h2>Личный кабинет</h2>
-      <p>Введите свой логин и пароль.</p>
-      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <input class="login-icon-user" type="text" name="login" placeholder="Логин">
-        </p>
-        <p>
-          <input class="login-icon-password" type="password" name="password" placeholder="Пароль">
-        </p>
-        <p class="login-password-info">
-          <input type="checkbox" name="remember" class="visually-hidden">
-          Запомните меня
-          <a class="restore" href="#">Я забыл пароль!</a>
-        </p>
-        <button class="button" type="submit">Войти</button>
-      </form>
-      <span class="modal-close">x</span>
+        <h2 class="section-title">Личный кабинет</h2>
+        <p>Введите свой логин и пароль.</p>
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+          <div>
+            <input class="login-icon-user" type="text" name="login" placeholder="Логин">
+            <div><img src="img/user.svg" width="13" height="13" alt=""></div>
+          </div>
+          <div>
+            <input class="login-icon-password" type="password" name="password" placeholder="Пароль">
+            <div><img src="img/lock.svg" width="13" height="15" alt=""></div>
+          </div>
+          <div class="login-password-info">
+            <input type="checkbox" name="remember" class="visually-hidden">
+            Запомните меня
+            <a class="restore" href="#">Я забыл пароль!</a>
+          </div>
+          <button class="button" type="submit">Войти</button>
+        </form>
+        <span class="modal-close"><img src="img/cross.svg" alt=""></span>
+      </section>
     </section>
   </body>
 </html>

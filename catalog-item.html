@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -18,21 +19,21 @@
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="login-link">Вход</li>
+          <li class="login-link"><span><img src="img/login.svg" alt=""></span>Вход</li>
         </ul>
       </nav>
     </header>
     <main class="container">
-      
+
       <h1 class="page-title">Набор для путешествий «Baxter of California»</h1>
-      
+
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="#">Магазин</a></li>
         <li><a href="#">Средства для ухода</a></li>
         <li class="breadcrumbs-current">Набор для путешествий «Baxter of California»</li>
       </ul>
-      
+
       <section class="product-photos">
         <h2 class="visually-hidden">Изображения товара</h2>
         <p class="product-photo-full">
@@ -44,7 +45,7 @@
           <li><img src="img/product-small-3.jpg" width="140" height="149" alt="Фото отдельной части"></li>
         </ul>
       </section>
-      
+
       <section class="product-info">
         <h2 class="visually-hidden">Описание товара</h2>
         <p class="product-availability">Есть в наличии</p>
@@ -63,7 +64,7 @@
           <li>Удобная кожаная косметичка</li>
         </ul>
       </section>
-      
+
       <footer class="main-footer">
         <p class="footer-contacts">
           Барбершоп «Бородинский»<br>
@@ -74,35 +75,37 @@
         <div class="footer-social">
           <b>Давайте дружить!</b>
           <ul>
-            <li><a class="social-button" href="#">Вконтакте</a></li>
-            <li><a class="social-button" href="#">Фейсбук</a></li>
-            <li><a class="social-button" href="#">Инстаграм</a></li>
+            <li><a class="social-button" href="#"><img src="img/vk.svg" width="14" height="8" alt="VK"></a></li>
+            <li><a class="social-button" href="#"><img src="img/facebook.svg" width="5" height="11" alt="Facebook"></a></li>
+            <li><a class="social-button" href="#"><img src="img/instagram.svg" width="10" height="10" alt="Instagram"></a></li>
           </ul>
         </div>
         <p class="footer-copyright">
           <b>Разработано:</b> <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
         </p>
       </footer>
-      
+
       <section class="modal modal-login">
-        <h2>Личный кабинет</h2>
+        <h2 class="section-title">Личный кабинет</h2>
         <p>Введите свой логин и пароль.</p>
         <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-          <p>
+          <div>
             <input class="login-icon-user" type="text" name="login" placeholder="Логин">
-          </p>
-          <p>
+            <div><img src="img/user.svg" width="13" height="13" alt=""></div>
+          </div>
+          <div>
             <input class="login-icon-password" type="password" name="password" placeholder="Пароль">
-          </p>
-          <p class="login-password-info">
+            <div><img src="img/lock.svg" width="13" height="15" alt=""></div>
+          </div>
+          <div class="login-password-info">
             <input type="checkbox" name="remember" class="visually-hidden">
             Запомните меня
             <a class="restore" href="#">Я забыл пароль!</a>
-          </p>
+          </div>
           <button class="button" type="submit">Войти</button>
         </form>
-        <span class="modal-close">x</span>
+        <span class="modal-close"><img src="img/cross.svg" alt=""></span>
       </section>
-    </main>  
+    </main>
   </body>
 </html>
